@@ -1,0 +1,3 @@
+#wip don t care anymore
+
+paste -sd+ <(cat input | xargs -I{} sh -c 'join <(echo {} | awk "{print substr(\$0,1,length/2)}" | fold -w1 | sort) <(echo {} | awk "{print substr(\$0,length/2+1)}" | fold -w1 | sort) | uniq' | sed 's/a/1/;s/b/2/;s/c/3/;s/d/4/;s/e/5/;s/f/6/;s/g/7/;s/h/8/;s/i/9/;s/j/10/;s/k/11/;s/l/12/;s/m/13/;s/n/14/;s/o/15/;s/p/16/;s/q/17/;s/r/18/;s/s/19/;s/t/20/;s/u/21/;s/v/22/;s/w/23/;s/x/24/;s/y/25/;s/z/26/;s/A/27/;s/B/28/;s/C/29/;s/D/30/;s/E/31/;s/F/32/;s/G/33/;s/H/34/;s/I/35/;s/J/36/;s/K/37/;s/L/38/;s/M/39/;s/N/40/;s/O/41/;s/P/42/;s/Q/43/;s/R/44/;s/S/45/;s/T/46/;s/U/47/;s/V/48/;s/W/49/;s/X/50/;s/Y/51/;s/Z/52/') | bc

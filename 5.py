@@ -1,4 +1,4 @@
-# yikes -- no bash.. no stacks 
+# yikes -- no bash.. no stacks -- not cleaning this up
 
 import numpy as np
 import re 
